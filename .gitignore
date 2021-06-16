@@ -1,0 +1,11 @@
+*.app
+*.xlf
+.alpackages
+.alcache
+.altemplates
+.snapshots
+debug.log
+rad.json
+launch.json
+settings.json
+ruleset.json

@@ -1,0 +1,26 @@
+{
+  "id": "f0c30a86-47b6-4c2d-90ba-0827cb593976",
+  "name": "RentCarUa",
+  "publisher": "Andrii Bodashevskyi",
+  "version": "1.0.0.0",
+  "brief": "RentCarUa - complete business software and service for offers reliable cars for any purpose",
+  "description": "RentCarUa gives you a chance to take a car for an unforgettable trip across Ukraine or meet your relatives or friends. The company offers you not just a rental car. You will get a comfortable ride, confidence in the trip, and full freedom of movement, more convenient than public transportation in Ukraine",
+  "privacyStatement": "https://RentCarUa.com/privacy/",
+  "EULA": "https://RentCarUa.com/agreement/",
+  "help": "https://RentCarUa.com/help/",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 50100
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://RentCarUa.com/help/",
+  "showMyCode": true,
+  "runtime": "7.0"
+}
