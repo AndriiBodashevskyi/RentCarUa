@@ -6,28 +6,28 @@ enum 50000 "Body Style RentCarUa"
     {
         Caption = 'Cabriolet';
     }
-    value(1; " Coupé")
+    value(1; Coupe)
     {
-        Caption = ' Coupé';
+        Caption = 'Coupe';
     }
-    value(2; " Hatchback")
+    value(2; Hatchback)
     {
-        Caption = ' Hatchback';
+        Caption = 'Hatchback';
     }
-    value(3; " Minivan")
+    value(3; Minivan)
     {
-        Caption = ' Minivan';
+        Caption = 'Minivan';
     }
-    value(4; " Panel Van")
+    value(4; "Panel Van")
     {
-        Caption = ' Panel Van';
+        Caption = 'Panel Van';
     }
-    value(5; " Pickup")
+    value(5; Pickup)
     {
-        Caption = ' Pickup';
+        Caption = 'Pickup';
     }
-    value(6; " Sedan")
+    value(6; Sedan)
     {
-        Caption = ' Sedan';
+        Caption = 'Sedan';
     } 
 }
