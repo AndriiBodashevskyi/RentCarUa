@@ -2,8 +2,9 @@ page 50005 "Post Sales Inv List RentCarUa"
 {
 
     ApplicationArea = All;
-    Caption = 'PostedSales Invoices List';
+    Caption = 'Posted Sales Invoices';
     PageType = List;
+    Editable = false;
     SourceTable = "Posted Rental Header RentCarUa";
     UsageCategory = History;
 
@@ -46,5 +47,4 @@ page 50005 "Post Sales Inv List RentCarUa"
             }
         }
     }
-
 }
