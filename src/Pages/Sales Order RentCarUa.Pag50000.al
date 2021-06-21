@@ -1,12 +1,12 @@
 page 50000 "Sales Order RentCarUa"
 {
-    
+
     Caption = 'Sales Order';
     PageType = Document;
     SourceTable = "Rental Sales Header RentCarUa";
     UsageCategory = Documents;
     ApplicationArea = All;
-    
+
     layout
     {
         area(content)
@@ -43,6 +43,12 @@ page 50000 "Sales Order RentCarUa"
                     ToolTip = 'Specifies the value of the Posting Date field';
                     ApplicationArea = All;
                 }
+            }
+            part(SalesLines; "Sales Order Subform RentCarUa")
+            {
+                ApplicationArea = All;
+                SubPageLink = "Document No." = FIELD("Doc. No.");
+                UpdatePropagation = Both;
             }
         }
     }   
