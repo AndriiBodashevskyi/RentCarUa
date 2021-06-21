@@ -16,11 +16,14 @@ table 50000 "Rental Sales Header RentCarUa"
         {
             Caption = 'Salesperson No.';
             DataClassification = CustomerContent;
+            TableRelation = "Salesperson/Purchaser";
+
         }
         field(3; "Customer No."; Code[20])
         {
             Caption = 'Customer No.';
             DataClassification = CustomerContent;
+            TableRelation = Customer;
         }
         field(4; "Order Date"; Date)
         {
@@ -36,6 +39,7 @@ table 50000 "Rental Sales Header RentCarUa"
         {
             Caption = 'Location Code';
             DataClassification = CustomerContent;
+            TableRelation = Location;
         }
     }
     keys
