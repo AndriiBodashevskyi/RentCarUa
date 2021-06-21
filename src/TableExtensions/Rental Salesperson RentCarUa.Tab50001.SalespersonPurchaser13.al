@@ -28,7 +28,7 @@ tableextension 50001 "Rental Salesperson RentCarUa" extends "Salesperson/Purchas
             Caption = 'Work Experience';
             DataClassification = CustomerContent;
         }
-        field(50006; "Working Hours / Week RentCarUa"; Blob)
+        field(50006; "Working Hours / Week RentCarUa"; Integer)
         {
             Caption = 'Working Hours / Week';
             DataClassification = CustomerContent;
