@@ -45,7 +45,7 @@ layout
                     ApplicationArea = All;
                 }
             }
-            part(PostedSalesLines; "Post SalesInv Lines RentCarUa")
+            part(PostedSalesLines; "Post Sales Inv Lines RentCarUa")
             {
                 ApplicationArea = All;
                 SubPageLink = "Document No." = FIELD("Doc. No.");
