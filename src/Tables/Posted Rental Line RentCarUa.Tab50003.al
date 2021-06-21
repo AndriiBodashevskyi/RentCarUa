@@ -2,8 +2,8 @@ table 50003 "Posted Rental Line RentCarUa"
 {
     Caption = 'Posted Rental Line';
     DataClassification = CustomerContent;
-    DrillDownPageID = "Posted Sales Invoice Lines RentCarUa";
-    LookupPageID = "Posted Sales Invoice Lines RentCarUa";
+    DrillDownPageID = "Post SalesInv Lines RentCarUa";
+    LookupPageID = "Post SalesInv Lines RentCarUa";
 
     
     fields
@@ -66,5 +66,4 @@ table 50003 "Posted Rental Line RentCarUa"
             Clustered = true;
         }
     }
-    
 }
