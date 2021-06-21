@@ -2,8 +2,8 @@ table 50000 "Rental Sales Header RentCarUa"
 {
     Caption = 'Rental Sales Header';
     DataClassification = CustomerContent;
-    // TODO:DrillDownPageId
-    // TODO:LookupPageId
+    DrillDownPageId = "Sales Order RentCarUa";
+    LookupPageId = "Sales Order RentCarUa";
 
     fields
     {
@@ -17,7 +17,6 @@ table 50000 "Rental Sales Header RentCarUa"
             Caption = 'Salesperson No.';
             DataClassification = CustomerContent;
             TableRelation = "Salesperson/Purchaser";
-
         }
         field(3; "Customer No."; Code[20])
         {
@@ -49,5 +48,4 @@ table 50000 "Rental Sales Header RentCarUa"
             Clustered = true;
         }
     }
-
 }
