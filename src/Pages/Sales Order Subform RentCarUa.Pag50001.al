@@ -68,6 +68,17 @@ page 50001 "Sales Order Subform RentCarUa"
                     ToolTip = 'Specifies the value of the Unit of Measure field';
                     ApplicationArea = All;
                 }
+                field("Starting Date"; Rec."Starting Date")
+                {
+                    ToolTip = 'Specifies the value of the Starting Date field';
+                    ApplicationArea = All;
+                }
+                field("Ending Date"; Rec."Ending Date")
+                {
+                    ToolTip = 'Specifies the value of the Ending Date field';
+                    ApplicationArea = All;
+                }
+                
             }
         }
     }

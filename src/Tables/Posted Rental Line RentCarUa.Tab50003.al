@@ -58,6 +58,16 @@ table 50003 "Posted Rental Line RentCarUa"
             DataClassification = CustomerContent;
             TableRelation = Currency;
         }
+        field(10; "Starting Date"; Date)        
+        {
+            Caption = 'Starting Date';
+            DataClassification = CustomerContent;
+        }
+        field(11; "Ending Date"; Date)
+        {
+            Caption = 'Ending Date';
+            DataClassification = CustomerContent;
+        }
     }
     keys
     {

@@ -7,6 +7,7 @@ page 50003 "Post SalesInv Lines RentCarUa"
     MultipleNewLines = true;
     PageType = ListPart;
     SourceTable = "Posted Rental Line RentCarUa";
+    Editable = false;
     
 layout
     {
@@ -67,13 +68,19 @@ layout
                     Caption = 'Unit of Measure';
                     ToolTip = 'Specifies the value of the Unit of Measure field';
                     ApplicationArea = All;
+                }                
+                field("Starting Date"; Rec."Starting Date")
+                {
+                    ToolTip = 'Specifies the value of the Starting Date field';
+                    ApplicationArea = All;
+                }
+                field("Ending Date"; Rec."Ending Date")
+                {
+                    ToolTip = 'Specifies the value of the Ending Date field';
+                    ApplicationArea = All;
                 }
             }
         }
     }
 }
 
-
-
-
-//TODO: филды начало аренды, конец аренды
