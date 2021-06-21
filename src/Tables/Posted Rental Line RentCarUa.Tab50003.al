@@ -2,8 +2,8 @@ table 50003 "Posted Rental Line RentCarUa"
 {
     Caption = 'Posted Rental Line';
     DataClassification = CustomerContent;
-    DrillDownPageID = "Post SalesInv Lines RentCarUa";
-    LookupPageID = "Post SalesInv Lines RentCarUa";
+    DrillDownPageID = "Post Sales Inv Lines RentCarUa";
+    LookupPageID = "Post Sales Inv Lines RentCarUa";
 
     
     fields
