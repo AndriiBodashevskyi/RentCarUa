@@ -2,7 +2,7 @@ page 50004 "Sales Order List RentCarUa"
 {
 
     ApplicationArea = All;
-    Caption = 'Sales Order List';
+    Caption = 'Sales Order';
     PageType = List;
     SourceTable = "Rental Sales Header RentCarUa";
     UsageCategory = History;
@@ -46,5 +46,4 @@ page 50004 "Sales Order List RentCarUa"
             }
         }
     }
-
 }
