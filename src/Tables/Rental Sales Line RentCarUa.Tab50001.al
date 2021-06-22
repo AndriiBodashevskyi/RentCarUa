@@ -117,7 +117,7 @@ table 50001 "Rental Sales Line RentCarUa"
             Caption = 'Ending Date';
             DataClassification = CustomerContent;
 
-            trigger OnValidate()
+            trigger OnValidate() 
             begin
                 Amount := Quantity * "Unit Price" * ("Ending Date" - "Starting Date");
             end;
