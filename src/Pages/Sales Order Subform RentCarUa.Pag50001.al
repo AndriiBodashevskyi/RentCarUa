@@ -1,9 +1,9 @@
 page 50001 "Sales Order Subform RentCarUa"
 {
-    AutoSplitKey = true;
+    // AutoSplitKey = true;
     Caption = 'Sales Order Lines RentCarUa';
-    DelayedInsert = true;
-    LinksAllowed = false;
+    // DelayedInsert = true;
+    // LinksAllowed = false;
     MultipleNewLines = true;
     PageType = ListPart;
     SourceTable = "Rental Sales Line RentCarUa";
@@ -25,6 +25,7 @@ page 50001 "Sales Order Subform RentCarUa"
                     Caption = 'Document No.';
                     ToolTip = 'Specifies the value of the Document No. field';
                     ApplicationArea = All;
+                    Visible = false;
                 }
                 field("Line No."; Rec."Line No.")
                 {
@@ -71,6 +72,12 @@ page 50001 "Sales Order Subform RentCarUa"
                 {
                     ToolTip = 'Specifies the value of the Ending Date field';
                     ApplicationArea = All;
+                }
+                field("Quantity of Days"; Rec."Quantity of Days")
+                {
+                    ToolTip = 'Specifies the value of the Quantity of Days field';
+                    ApplicationArea = All;
+                    Editable = false;
                 }
                 field(Amount; Rec.Amount)
                 {
