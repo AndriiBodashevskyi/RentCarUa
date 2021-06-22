@@ -47,5 +47,10 @@ tableextension 50000 "Rental Car RentCarUa" extends Item //27
             Caption = 'Engine Power';
             DataClassification = CustomerContent;
         }
+        field(50009; "Registration Number RentCarUa"; Code[20])
+        {
+            Caption = 'Registration Number';
+            DataClassification = CustomerContent;
+        }
     }
 }
