@@ -1,6 +1,5 @@
 page 50000 "Sales Order RentCarUa"
 {
-
     Caption = 'Sales Order RentCarUa';
     PageType = Document;
     SourceTable = "Rental Sales Header RentCarUa";
@@ -13,16 +12,16 @@ page 50000 "Sales Order RentCarUa"
         {
             group(General)
             {
-                field("Customer No."; Rec."Customer No.")
-                {
-                    Caption = 'Customer No.';
-                    ToolTip = 'Specifies the value of the Customer No. field';
-                    ApplicationArea = All;
-                }
                 field("Doc. No."; Rec."Doc. No.")
                 {
                     Caption = 'Doc. No.';
                     ToolTip = 'Specifies the value of the Doc. No. field';
+                    ApplicationArea = All;
+                }
+                field("Customer No."; Rec."Customer No.")
+                {
+                    Caption = 'Customer No.';
+                    ToolTip = 'Specifies the value of the Customer No. field';
                     ApplicationArea = All;
                 }
                 field("Location Code"; Rec."Location Code")

@@ -9,28 +9,16 @@ page 50003 "Post Sales Inv Lines RentCarUa"
     SourceTable = "Posted Rental Line RentCarUa";
     Editable = false;
     
-layout
+    layout
     {
         area(content)
         {
             repeater(Control1)
             {
-                field(Amount; Rec.Amount)
-                {
-                    Caption = 'Amount';
-                    ToolTip = 'Specifies the value of the Amount field';
-                    ApplicationArea = All;
-                }
                 field("Car No."; Rec."Car No.")
                 {
                     Caption = 'Car No.';
                     ToolTip = 'Specifies the value of the Car No. field';
-                    ApplicationArea = All;
-                }
-                field("Currency Code"; Rec."Currency Code")
-                {
-                    Caption = 'Currency Code';
-                    ToolTip = 'Specifies the value of the Currency Code field';
                     ApplicationArea = All;
                 }
                 field("Document No."; Rec."Document No.")
@@ -68,7 +56,13 @@ layout
                     Caption = 'Unit of Measure';
                     ToolTip = 'Specifies the value of the Unit of Measure field';
                     ApplicationArea = All;
-                }                
+                }
+                field("Currency Code"; Rec."Currency Code")
+                {
+                    Caption = 'Currency Code';
+                    ToolTip = 'Specifies the value of the Currency Code field';
+                    ApplicationArea = All;
+                }
                 field("Starting Date"; Rec."Starting Date")
                 {
                     ToolTip = 'Specifies the value of the Starting Date field';
@@ -77,6 +71,12 @@ layout
                 field("Ending Date"; Rec."Ending Date")
                 {
                     ToolTip = 'Specifies the value of the Ending Date field';
+                    ApplicationArea = All;
+                }
+                field(Amount; Rec.Amount)
+                {
+                    Caption = 'Amount';
+                    ToolTip = 'Specifies the value of the Amount field';
                     ApplicationArea = All;
                 }
             }

@@ -1,29 +1,28 @@
-page 50002 "Post Sales Invoices RentCarUa"
+page 50002 "Post Sales Invoice RentCarUa"
 {
-    
-    Caption = 'Posted Sales Invoices RentCarUa';
+    Caption = 'Posted Sales Invoice RentCarUa';
     PageType = Document;
     SourceTable = "Posted Rental Header RentCarUa";
     UsageCategory = Documents;
     ApplicationArea = All;
     Editable = false;
 
-layout
+    layout
     {
         area(content)
         {
             group(General)
             {
-                field("Customer No."; Rec."Customer No.")
-                {
-                    Caption = 'Customer No.';
-                    ToolTip = 'Specifies the value of the Customer No. field';
-                    ApplicationArea = All;
-                }
                 field("Doc. No."; Rec."Doc. No.")
                 {
                     Caption = 'Doc. No.';
                     ToolTip = 'Specifies the value of the Doc. No. field';
+                    ApplicationArea = All;
+                }
+                field("Customer No."; Rec."Customer No.")
+                {
+                    Caption = 'Customer No.';
+                    ToolTip = 'Specifies the value of the Customer No. field';
                     ApplicationArea = All;
                 }
                 field("Location Code"; Rec."Location Code")
@@ -45,7 +44,7 @@ layout
                     ApplicationArea = All;
                 }
             }
-            part(PostedSalesLines; "Post Sales Inv Lines RentCarUa")
+            part(SalesLines; "Sales Order Subform RentCarUa")
             {
                 ApplicationArea = All;
                 SubPageLink = "Document No." = FIELD("Doc. No.");

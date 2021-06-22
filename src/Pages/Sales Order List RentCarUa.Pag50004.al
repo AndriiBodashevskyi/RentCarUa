@@ -1,8 +1,8 @@
 page 50004 "Sales Order List RentCarUa"
 {
-
     ApplicationArea = All;
     Caption = 'Sales Orders RentCarUa';
+    CardPageId = "Sales Order RentCarUa";
     PageType = List;
     SourceTable = "Rental Sales Header RentCarUa";
     UsageCategory = Lists;
@@ -11,16 +11,16 @@ page 50004 "Sales Order List RentCarUa"
     {
         area(content)
         {
-            repeater(General)
+            repeater(Control1)
             {
-                field("Customer No."; Rec."Customer No.")
-                {
-                    ToolTip = 'Specifies the value of the Customer No. field';
-                    ApplicationArea = All;
-                }
                 field("Doc. No."; Rec."Doc. No.")
                 {
                     ToolTip = 'Specifies the value of the Doc. No. field';
+                    ApplicationArea = All;
+                }
+                field("Customer No."; Rec."Customer No.")
+                {
+                    ToolTip = 'Specifies the value of the Customer No. field';
                     ApplicationArea = All;
                 }
                 field("Location Code"; Rec."Location Code")

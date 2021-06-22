@@ -1,7 +1,7 @@
 page 50001 "Sales Order Subform RentCarUa"
 {
     AutoSplitKey = true;
-    Caption = 'Lines RentCarUa';
+    Caption = 'Sales Order Lines RentCarUa';
     DelayedInsert = true;
     LinksAllowed = false;
     MultipleNewLines = true;
@@ -14,22 +14,10 @@ page 50001 "Sales Order Subform RentCarUa"
         {
             repeater(Control1)
             {
-                field(Amount; Rec.Amount)
-                {
-                    Caption = 'Amount';
-                    ToolTip = 'Specifies the value of the Amount field';
-                    ApplicationArea = All;
-                }
                 field("Car No."; Rec."Car No.")
                 {
                     Caption = 'Car No.';
                     ToolTip = 'Specifies the value of the Car No. field';
-                    ApplicationArea = All;
-                }
-                field("Currency Code"; Rec."Currency Code")
-                {
-                    Caption = 'Currency Code';
-                    ToolTip = 'Specifies the value of the Currency Code field';
                     ApplicationArea = All;
                 }
                 field("Document No."; Rec."Document No.")
@@ -68,6 +56,12 @@ page 50001 "Sales Order Subform RentCarUa"
                     ToolTip = 'Specifies the value of the Unit of Measure field';
                     ApplicationArea = All;
                 }
+                field("Currency Code"; Rec."Currency Code")
+                {
+                    Caption = 'Currency Code';
+                    ToolTip = 'Specifies the value of the Currency Code field';
+                    ApplicationArea = All;
+                }
                 field("Starting Date"; Rec."Starting Date")
                 {
                     ToolTip = 'Specifies the value of the Starting Date field';
@@ -76,6 +70,12 @@ page 50001 "Sales Order Subform RentCarUa"
                 field("Ending Date"; Rec."Ending Date")
                 {
                     ToolTip = 'Specifies the value of the Ending Date field';
+                    ApplicationArea = All;
+                }
+                field(Amount; Rec.Amount)
+                {
+                    Caption = 'Amount';
+                    ToolTip = 'Specifies the value of the Amount field';
                     ApplicationArea = All;
                 }
             }
