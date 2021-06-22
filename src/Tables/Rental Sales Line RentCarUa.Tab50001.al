@@ -1,6 +1,6 @@
 table 50001 "Rental Sales Line RentCarUa"
 {
-    Caption = 'Rental Sales Line';
+    Caption = 'Rental Sales Line RentCarUa';
     DataClassification = CustomerContent;
 
     fields

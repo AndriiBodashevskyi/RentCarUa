@@ -1,7 +1,7 @@
 page 50001 "Sales Order Subform RentCarUa"
 {
     AutoSplitKey = true;
-    Caption = 'Lines';
+    Caption = 'Lines RentCarUa';
     DelayedInsert = true;
     LinksAllowed = false;
     MultipleNewLines = true;
@@ -78,7 +78,6 @@ page 50001 "Sales Order Subform RentCarUa"
                     ToolTip = 'Specifies the value of the Ending Date field';
                     ApplicationArea = All;
                 }
-                
             }
         }
     }

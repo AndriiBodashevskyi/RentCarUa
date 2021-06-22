@@ -2,10 +2,10 @@ page 50004 "Sales Order List RentCarUa"
 {
 
     ApplicationArea = All;
-    Caption = 'Sales Order';
+    Caption = 'Sales Orders RentCarUa';
     PageType = List;
     SourceTable = "Rental Sales Header RentCarUa";
-    UsageCategory = History;
+    UsageCategory = Lists;
 
     layout
     {
