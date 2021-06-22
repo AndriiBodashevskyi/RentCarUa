@@ -2,8 +2,8 @@ table 50000 "Rental Sales Header RentCarUa"
 {
     Caption = 'Rental Sales Header RentCarUa';
     DataClassification = CustomerContent;
-    DrillDownPageId = "Sales Order RentCarUa";
-    LookupPageId = "Sales Order RentCarUa";
+    DrillDownPageId = "Sales Order List RentCarUa";
+    LookupPageId = "Sales Order List RentCarUa";
 
     fields
     {

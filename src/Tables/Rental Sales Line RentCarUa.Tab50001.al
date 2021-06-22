@@ -2,6 +2,8 @@ table 50001 "Rental Sales Line RentCarUa"
 {
     Caption = 'Rental Sales Line RentCarUa';
     DataClassification = CustomerContent;
+    DrillDownPageID = "Sales Order Subform RentCarUa";
+    LookupPageID = "Sales Order Subform RentCarUa";
 
     fields
     {

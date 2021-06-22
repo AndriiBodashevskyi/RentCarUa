@@ -2,8 +2,8 @@ table 50002 "Posted Rental Header RentCarUa"
 {
     Caption = 'Posted Rental Header RentCarUa';
     DataClassification = CustomerContent;
-    DrillDownPageId = "Post Sales Invoice RentCarUa";
-    LookupPageId = "Post Sales Invoice RentCarUa";
+    DrillDownPageId = "Post Sales Inv List RentCarUa";
+    LookupPageId = "Post Sales Inv List RentCarUa";
 
 
     fields
