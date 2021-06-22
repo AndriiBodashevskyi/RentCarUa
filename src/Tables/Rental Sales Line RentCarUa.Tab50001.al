@@ -18,13 +18,13 @@ table 50001 "Rental Sales Line RentCarUa"
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
             begin
-                Amount := Quantity * "Unit Price" * ("Ending Date" - "Starting Date");
+                Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Experience RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You couldn t take a car');
+                    error('Sorry! Yours driving experience is less than one year! You could not rent a car');
                 // Modify();
             end;
         }
@@ -38,13 +38,13 @@ table 50001 "Rental Sales Line RentCarUa"
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
             begin
-                Amount := Quantity * "Unit Price" * ("Ending Date" - "Starting Date");
+                Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Experience RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You couldn t take a car');
+                    error('Sorry! Yours driving experience is less than one year! You could not rent a car');
                 // Modify();
             end;
         }
@@ -59,13 +59,13 @@ table 50001 "Rental Sales Line RentCarUa"
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
             begin
-                Amount := Quantity * "Unit Price" * ("Ending Date" - "Starting Date");
+                Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Experience RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You couldn t take a car');
+                    error('Sorry! Yours driving experience is less than one year! You could not rent a car');
                 // Modify();
             end;
         }
@@ -79,13 +79,13 @@ table 50001 "Rental Sales Line RentCarUa"
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
             begin
-                Amount := Quantity * "Unit Price" * ("Ending Date" - "Starting Date");
+                Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Experience RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You couldn t take a car');
+                    error('Sorry! Yours driving experience is less than one year! You could not rent a car');
                 // Modify();
             end;
         }
@@ -99,13 +99,13 @@ table 50001 "Rental Sales Line RentCarUa"
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
             begin
-                Amount := Quantity * "Unit Price" * ("Ending Date" - "Starting Date");
+                Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Experience RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You couldn t take a car');
+                    error('Sorry! Yours driving experience is less than one year! You could not rent a car');
                 // Modify();
             end;
         }
@@ -119,13 +119,13 @@ table 50001 "Rental Sales Line RentCarUa"
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
             begin
-                Amount := Quantity * "Unit Price" * ("Ending Date" - "Starting Date");
+                Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Experience RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You couldn t take a car');
+                    error('Sorry! Yours driving experience is less than one year! You could not rent a car');
                 // Modify();
             end;
         }
@@ -141,13 +141,13 @@ table 50001 "Rental Sales Line RentCarUa"
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
             begin
-                Amount := Quantity * "Unit Price" * ("Ending Date" - "Starting Date");
+                Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Experience RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You couldn t take a car');
+                    error('Sorry! Yours driving experience is less than one year! You could not rent a car');
                 // Modify();
             end;
         }
@@ -161,13 +161,13 @@ table 50001 "Rental Sales Line RentCarUa"
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
             begin
-                Amount := Quantity * "Unit Price" * ("Ending Date" - "Starting Date");
+                Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Experience RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You couldn t take a car');
+                    error('Sorry! Yours driving experience is less than one year! You could not rent a car');
                 // Modify();
             end;
         }
@@ -182,13 +182,13 @@ table 50001 "Rental Sales Line RentCarUa"
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
             begin
-                Amount := Quantity * "Unit Price" * ("Ending Date" - "Starting Date");
+                Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Experience RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You couldn t take a car');
+                    error('Sorry! Yours driving experience is less than one year! You could not rent a car');
                 // Modify();
             end;
         }
@@ -202,13 +202,13 @@ table 50001 "Rental Sales Line RentCarUa"
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
             begin
-                Amount := Quantity * "Unit Price" * ("Ending Date" - "Starting Date");
+                Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Experience RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You couldn t take a car');
+                    error('Sorry! Yours driving experience is less than one year! You could not take a car');
                 // Modify();
             end;
         }
@@ -222,15 +222,21 @@ table 50001 "Rental Sales Line RentCarUa"
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
             begin
-                Amount := Quantity * "Unit Price" * ("Ending Date" - "Starting Date");
+                Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Experience RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You couldn t take a car');
+                    error('Sorry! Yours driving experience is less than one year! You could not take a car');
                 // Modify();
             end;
+        }
+        field(12; "Quantity of Days"; Integer)
+        {
+            Caption = 'Quantity of Days';
+            DataClassification = CustomerContent;
+            
         }
     }
     keys
