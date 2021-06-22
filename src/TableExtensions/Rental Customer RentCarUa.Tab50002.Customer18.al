@@ -7,7 +7,7 @@ tableextension 50002 "Rental Customer RentCarUa" extends Customer //18
             Caption = 'VIP Client';
             DataClassification = CustomerContent;
         }
-        field(50001; "Driving Licence Number RentCarUa"; Code[20])
+        field(50001; "Licence Number RentCarUa"; Code[20])
         {
             Caption = 'Driving Licence Number';
             DataClassification = CustomerContent;
