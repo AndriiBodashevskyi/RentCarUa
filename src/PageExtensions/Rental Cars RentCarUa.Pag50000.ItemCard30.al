@@ -49,6 +49,11 @@ pageextension 50000 "Rental Cars RentCarUa" extends "Item Card" //30
                 ToolTip = 'Specifies the value of the Transmission field';
                 ApplicationArea = All;
             }
+            field("Registration Number RentCarUa"; Rec."Registration Number RentCarUa")
+            {
+                ToolTip = 'Specifies the value of the Registration Number field';
+                ApplicationArea = All;
+            }
         }
     }
 }
