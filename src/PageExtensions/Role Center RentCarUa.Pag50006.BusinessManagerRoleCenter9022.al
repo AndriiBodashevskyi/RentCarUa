@@ -28,5 +28,16 @@ pageextension 50006 "Role Center RentCarUa" extends "Business Manager Role Cente
                 }
             }
         }
+        addafter("Sales Invoice")
+        {
+            action("Rental Order RentCarUa")
+            {
+                ApplicationArea = Basic, Suite;
+                Caption = 'Rental Order';
+                RunObject = page "Sales Order RentCarUa";
+                RunPageMode = Create;
+                ToolTip = 'Create a new rental order';
+            }
+        }
     }
 }

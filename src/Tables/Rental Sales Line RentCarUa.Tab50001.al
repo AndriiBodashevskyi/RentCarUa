@@ -268,6 +268,6 @@ table 50001 "Rental Sales Line RentCarUa"
 //TODO: 3) Discount
 //TODO: 4) CodeUnit
 //TODO: 5) Labels
-//TODO: 7) field Name не в ручную
+//TODO: 6) field Name не в ручную
 
 
