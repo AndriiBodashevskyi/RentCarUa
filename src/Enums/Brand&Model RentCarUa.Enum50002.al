@@ -1,5 +1,6 @@
 enum 50002 "Brand&Model RentCarUa"
 {
+    Caption = 'Brand&Model';
     Extensible = true;
     
     value(0; "BMW 318")

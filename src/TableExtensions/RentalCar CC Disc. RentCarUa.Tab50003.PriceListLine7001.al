@@ -1,6 +1,6 @@
 tableextension 50003 "RentalCar C/C Disc. RentCarUa" extends "Price List Line" //7001
 {
-    Caption = 'Rental Customer/Car Discount RentCarUa';
+    Caption = 'Rental Customer/Car Discount';
     fields
     {
         field(50000; "Code RentCarUa"; Code[20])
@@ -8,7 +8,7 @@ tableextension 50003 "RentalCar C/C Disc. RentCarUa" extends "Price List Line" /
             Caption = 'Code';
             DataClassification = CustomerContent;
         }
-        field(50001; "Type RentCarUa"; Enum "Customer/Car")
+        field(50001; "Type RentCarUa"; Enum "Customer/Car RentCarUa")
         {
             Caption = 'Type';
             DataClassification = CustomerContent;

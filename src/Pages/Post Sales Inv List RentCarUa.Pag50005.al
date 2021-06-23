@@ -2,7 +2,7 @@ page 50005 "Post Sales Inv List RentCarUa"
 {
 
     ApplicationArea = All;
-    Caption = 'Posted Sales Invoices RentCarUa';
+    Caption = 'Posted Rental Invoices';
     PageType = List;
     Editable = false;
     SourceTable = "Posted Rental Header RentCarUa";

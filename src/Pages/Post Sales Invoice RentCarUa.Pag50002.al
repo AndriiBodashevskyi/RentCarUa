@@ -1,6 +1,6 @@
 page 50002 "Post Sales Invoice RentCarUa"
 {
-    Caption = 'Posted Sales Invoice RentCarUa';
+    Caption = 'Posted Rental Invoice';
     PageType = Document;
     SourceTable = "Posted Rental Header RentCarUa";
     UsageCategory = Documents;

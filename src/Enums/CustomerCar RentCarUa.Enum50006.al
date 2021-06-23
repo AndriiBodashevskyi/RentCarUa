@@ -1,5 +1,6 @@
-enum 50006 "Customer/Car"
+enum 50006 "Customer/Car RentCarUa"
 {
+    Caption = 'Customer/Car';
     Extensible = true;
     
     value(0; Customer)

@@ -1,6 +1,8 @@
 pageextension 50004 "Rental SPerson Card RentCarUa" extends "Salesperson/Purchaser Card" //5116
 {
-layout
+    Caption = 'Rental Salesperson Card';
+
+    layout
     {
         addlast(General)
         {

@@ -1,6 +1,6 @@
 table 50001 "Rental Sales Line RentCarUa"
 {
-    Caption = 'Rental Sales Line RentCarUa';
+    Caption = 'Rental Sales Line';
     DataClassification = CustomerContent;
     DrillDownPageID = "Sales Order Subform RentCarUa";
     LookupPageID = "Sales Order Subform RentCarUa";
@@ -13,23 +13,23 @@ table 50001 "Rental Sales Line RentCarUa"
             DataClassification = CustomerContent;
             TableRelation = "Rental Sales Header RentCarUa"."Document No.";
 
-            trigger OnValidate()
-            var
-                RentalSalesHader: Record "Rental Sales Header RentCarUa";
-                Customer: Record Customer;
-            begin
-                "Quantity of Days" := "Ending Date" - "Starting Date";
-                Amount := Quantity * "Unit Price" * ("Quantity of Days");
-                RentalSalesHader.Get(Rec."Document No.");
-                Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."VIP Client RentCarUa" = true then
-                    Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Experience RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You could not rent a car');
-                Modify();
-            end;
+            // trigger OnValidate()
+            // var
+            //     RentalSalesHader: Record "Rental Sales Header RentCarUa";
+            //     Customer: Record Customer;
+            // begin
+            //     "Quantity of Days" := "Ending Date" - "Starting Date";
+            //     Amount := Quantity * "Unit Price" * ("Quantity of Days");
+            //     RentalSalesHader.Get(Rec."Document No.");
+            //     Customer.Get(RentalSalesHader."Customer No.");
+            //     if Customer."VIP Client RentCarUa" = true then
+            //         Amount := Amount - (Amount * 0.15);
+            //     if Customer."Driving Experience RentCarUa" < 1 then
+            //         error('Sorry! Yours driving experience is less than one year! You could not rent a car');
+            //     Modify();
+            // end;
         }
-        field(2; "Line No."; Code[20])
+        field(2; "Line No."; Integer)
         {
             Caption = 'Line No.';
             DataClassification = CustomerContent;
@@ -47,7 +47,7 @@ table 50001 "Rental Sales Line RentCarUa"
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Experience RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not rent a car');
-                Modify();
+                // Modify();
             end;
         }
         field(3; "Car No."; Code[20])
@@ -69,7 +69,7 @@ table 50001 "Rental Sales Line RentCarUa"
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Experience RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not rent a car');
-                Modify();
+                // Modify();
             end;
         }
         field(4; Name; Text[50])
@@ -263,4 +263,11 @@ table 50001 "Rental Sales Line RentCarUa"
     }
 }
 
-//TODO: проверка или пустые даты, Line No, modify, quantity of days, discount, errors
+//TODO: 1) проверка на пустые даты
+//TODO: 2) Line No
+//TODO: 3) Modify
+//TODO: 4) Quantity of days
+//TODO: 5) Discount
+//TODO: 6) Errors
+//TODO: 7) CodeUnit
+//TODO: 8) Labels

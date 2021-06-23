@@ -1,5 +1,6 @@
 tableextension 50001 "Rental Salesperson RentCarUa" extends "Salesperson/Purchaser" //13
 {
+    Caption = 'Rental Salesperson';
     fields
     {     
          field(50000; "ResponsibilityCenter RentCarUa"; Code[10])

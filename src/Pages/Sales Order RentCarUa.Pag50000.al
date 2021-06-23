@@ -1,6 +1,6 @@
 page 50000 "Sales Order RentCarUa"
 {
-    Caption = 'Sales Order RentCarUa';
+    Caption = 'Rental Order';
     PageType = Document;
     SourceTable = "Rental Sales Header RentCarUa";
     UsageCategory = Documents;

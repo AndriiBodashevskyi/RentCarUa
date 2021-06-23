@@ -1,5 +1,6 @@
 enum 50005 "Transmission RentCarUa"
 {
+    Caption = 'Transmission';
     Extensible = true;
     
     value(0; Manual4)

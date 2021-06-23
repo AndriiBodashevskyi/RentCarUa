@@ -1,5 +1,6 @@
 enum 50001 "Manufacturer Country RentCarUa"
 {
+    Caption = 'Manufacturer Country';
     Extensible = true;
     
     value(0; Germany)

@@ -1,5 +1,6 @@
 pageextension 50001 "Rental Salespersons RentCarUa" extends "Salespersons/Purchasers" //14
 {
+    Caption = 'Rental Salespersons';
     layout
     {
         addlast(Control1)

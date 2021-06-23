@@ -1,5 +1,6 @@
 pageextension 50002 "Rental Customers RentCarUa" extends "Customer List" //22
 {
+    Caption = 'Rental Customers';
     layout
     {
         addlast(Control1)

@@ -1,5 +1,6 @@
 enum 50004 "Fuel Type RentCarUa"
 {
+    Caption = 'Fuel Type';
     Extensible = true;
     
     value(0; Petrol)

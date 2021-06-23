@@ -1,7 +1,7 @@
 page 50003 "Post Sales Inv Lines RentCarUa"
 {
     AutoSplitKey = true;
-    Caption = 'Posted Sales Invoice Lines RentCarUa';
+    Caption = 'Posted Rental Invoice Lines';
     DelayedInsert = true;
     LinksAllowed = false;
     MultipleNewLines = true;

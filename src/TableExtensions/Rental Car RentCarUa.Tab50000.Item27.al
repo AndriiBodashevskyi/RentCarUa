@@ -1,5 +1,7 @@
 tableextension 50000 "Rental Car RentCarUa" extends Item //27
 {
+    Caption = 'Rental Car';
+    
     fields
     {
         field(50000; "Body Style RentCarUa"; Enum "Body Style RentCarUa")

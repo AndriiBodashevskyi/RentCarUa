@@ -1,7 +1,7 @@
 page 50004 "Sales Order List RentCarUa"
 {
     ApplicationArea = All;
-    Caption = 'Sales Orders RentCarUa';
+    Caption = 'Rental Orders';
     CardPageId = "Sales Order RentCarUa";
     PageType = List;
     SourceTable = "Rental Sales Header RentCarUa";

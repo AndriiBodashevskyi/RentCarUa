@@ -1,5 +1,6 @@
 enum 50003 "Color RentCarUa"
 {
+    Caption = 'Color';
     Extensible = true;
     
     value(0; Black)

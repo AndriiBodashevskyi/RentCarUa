@@ -1,5 +1,6 @@
 tableextension 50002 "Rental Customer RentCarUa" extends Customer //18
 {
+    Caption = 'Rental Customer';
     fields
     {
         field(50000; "VIP Client RentCarUa"; Boolean)

@@ -1,7 +1,7 @@
 page 50001 "Sales Order Subform RentCarUa"
 {
     // AutoSplitKey = true;
-    Caption = 'Sales Order Lines RentCarUa';
+    Caption = 'Rental Order Lines';
     // DelayedInsert = true;
     // LinksAllowed = false;
     MultipleNewLines = true;

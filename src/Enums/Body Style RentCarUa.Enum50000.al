@@ -1,5 +1,6 @@
 enum 50000 "Body Style RentCarUa"
 {
+    Caption = 'Body Style';
     Extensible = true;
     
     value(0; Cabriolet)

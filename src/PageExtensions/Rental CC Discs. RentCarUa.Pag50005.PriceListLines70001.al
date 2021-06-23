@@ -1,6 +1,6 @@
-pageextension 50005 "RentalCar C/C Discs. RentCarUa" extends "Price List Lines" //70001
+pageextension 50005 "Rental C/C Discs. RentCarUa" extends "Price List Lines" //70001
 {
-    Caption = 'RentalCar Customer/Car Discounts RentCarUa';
+    Caption = 'Rental Customer/Car Discounts';
     layout
     {
         addlast(Control1)

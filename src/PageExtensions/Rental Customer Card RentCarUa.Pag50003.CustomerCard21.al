@@ -1,5 +1,6 @@
 pageextension 50003 "Rental Customer Card RentCarUa" extends "Customer Card" //21
 {
+    Caption = 'Rental Customer Card';
     layout
     {
         addlast(General)
