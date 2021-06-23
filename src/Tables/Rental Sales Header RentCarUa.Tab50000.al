@@ -7,7 +7,7 @@ table 50000 "Rental Sales Header RentCarUa"
 
     fields
     {
-        field(1; "Doc. No."; Code[20])
+        field(1; "Document No."; Code[20])
         {
             Caption = 'Doc. No.';
             DataClassification = CustomerContent;
@@ -43,7 +43,7 @@ table 50000 "Rental Sales Header RentCarUa"
     }
     keys
     {
-        key(PK; "Doc. No.")
+        key(PK; "Document No.")
         {
             Clustered = true;
         }

@@ -12,7 +12,7 @@ page 50000 "Sales Order RentCarUa"
         {
             group(General)
             {
-                field("Doc. No."; Rec."Doc. No.")
+                field("Document No."; Rec."Document No.")
                 {
                     Caption = 'Doc. No.';
                     ToolTip = 'Specifies the value of the Doc. No. field';
@@ -46,7 +46,7 @@ page 50000 "Sales Order RentCarUa"
             part(SalesLines; "Sales Order Subform RentCarUa")
             {
                 ApplicationArea = All;
-                SubPageLink = "Document No." = FIELD("Doc. No.");
+                SubPageLink = "Document No." = FIELD("Document No.");
                 UpdatePropagation = Both;
             }
         }

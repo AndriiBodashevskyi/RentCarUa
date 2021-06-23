@@ -12,7 +12,7 @@ table 50003 "Posted Rental Line RentCarUa"
         {
             Caption = 'Document No.';
             DataClassification = CustomerContent;
-            TableRelation = "Rental Sales Header RentCarUa"."Doc. No.";
+            TableRelation = "Rental Sales Header RentCarUa"."Document No.";
         }
         field(2; "Line No."; Code[20])
         {

@@ -13,7 +13,7 @@ page 50004 "Sales Order List RentCarUa"
         {
             repeater(Control1)
             {
-                field("Doc. No."; Rec."Doc. No.")
+                field("Document No."; Rec."Document No.")
                 {
                     ToolTip = 'Specifies the value of the Doc. No. field';
                     ApplicationArea = All;
