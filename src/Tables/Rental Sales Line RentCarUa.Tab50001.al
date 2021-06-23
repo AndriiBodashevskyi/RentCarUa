@@ -35,20 +35,8 @@ table 50001 "Rental Sales Line RentCarUa"
             DataClassification = CustomerContent;
 
             trigger OnValidate()
-            var
-                RentalSalesHader: Record "Rental Sales Header RentCarUa";
-                Customer: Record Customer;
-                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
-                "Quantity of Days" := "Ending Date" - "Starting Date";
-                Amount := Quantity * "Unit Price" * ("Quantity of Days");
-                RentalSalesHader.Get(Rec."Document No.");
-                Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."Is VIP Client RentCarUa" = true then
-                    Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error(Label1Err);
-                // Modify();
+                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, false);
             end;
         }
         field(3; "Car No."; Code[20])
@@ -58,20 +46,8 @@ table 50001 "Rental Sales Line RentCarUa"
             TableRelation = Item;
 
             trigger OnValidate()
-            var
-                RentalSalesHader: Record "Rental Sales Header RentCarUa";
-                Customer: Record Customer;
-                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
-                "Quantity of Days" := "Ending Date" - "Starting Date";
-                Amount := Quantity * "Unit Price" * ("Quantity of Days");
-                RentalSalesHader.Get(Rec."Document No.");
-                Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."Is VIP Client RentCarUa" = true then
-                    Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error(Label1Err);
-                // Modify();
+                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, false);
             end;
         }
         field(4; Name; Text[50])
@@ -80,20 +56,8 @@ table 50001 "Rental Sales Line RentCarUa"
             DataClassification = CustomerContent;
 
             trigger OnValidate()
-            var
-                RentalSalesHader: Record "Rental Sales Header RentCarUa";
-                Customer: Record Customer;
-                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
-                "Quantity of Days" := "Ending Date" - "Starting Date";
-                Amount := Quantity * "Unit Price" * ("Quantity of Days");
-                RentalSalesHader.Get(Rec."Document No.");
-                Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."Is VIP Client RentCarUa" = true then
-                    Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error(Label1Err);
-                Modify();
+                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, true);
             end;
         }
         field(5; Quantity; Integer)
@@ -102,20 +66,8 @@ table 50001 "Rental Sales Line RentCarUa"
             DataClassification = CustomerContent;
 
             trigger OnValidate()
-            var
-                RentalSalesHader: Record "Rental Sales Header RentCarUa";
-                Customer: Record Customer;
-                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
-                "Quantity of Days" := "Ending Date" - "Starting Date";
-                Amount := Quantity * "Unit Price" * ("Quantity of Days");
-                RentalSalesHader.Get(Rec."Document No.");
-                Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."Is VIP Client RentCarUa" = true then
-                    Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error(Label1Err);
-                Modify();
+                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, true);
             end;
         }
         field(6; "Unit Price"; Decimal)
@@ -124,20 +76,8 @@ table 50001 "Rental Sales Line RentCarUa"
             DataClassification = CustomerContent;
 
             trigger OnValidate()
-            var
-                RentalSalesHader: Record "Rental Sales Header RentCarUa";
-                Customer: Record Customer;
-                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
-                "Quantity of Days" := "Ending Date" - "Starting Date";
-                Amount := Quantity * "Unit Price" * ("Quantity of Days");
-                RentalSalesHader.Get(Rec."Document No.");
-                Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."Is VIP Client RentCarUa" = true then
-                    Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error(Label1Err);
-                Modify();
+                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, true);
             end;
         }
         field(7; "Unit of Measure"; Text[50])
@@ -148,20 +88,8 @@ table 50001 "Rental Sales Line RentCarUa"
             ValidateTableRelation = false;
 
             trigger OnValidate()
-            var
-                RentalSalesHader: Record "Rental Sales Header RentCarUa";
-                Customer: Record Customer;
-                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
-                "Quantity of Days" := "Ending Date" - "Starting Date";
-                Amount := Quantity * "Unit Price" * ("Quantity of Days");
-                RentalSalesHader.Get(Rec."Document No.");
-                Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."Is VIP Client RentCarUa" = true then
-                    Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error(Label1Err);
-                Modify();
+                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, true);
             end;
         }
         field(8; Amount; Decimal)
@@ -170,20 +98,8 @@ table 50001 "Rental Sales Line RentCarUa"
             DataClassification = CustomerContent;
 
             trigger OnValidate()
-            var
-                RentalSalesHader: Record "Rental Sales Header RentCarUa";
-                Customer: Record Customer;
-                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
-                "Quantity of Days" := "Ending Date" - "Starting Date";
-                Amount := Quantity * "Unit Price" * ("Quantity of Days");
-                RentalSalesHader.Get(Rec."Document No.");
-                Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."Is VIP Client RentCarUa" = true then
-                    Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error(Label1Err);
-                Modify();
+                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, true);
             end;
         }
         field(9; "Currency Code"; Code[10])
@@ -193,20 +109,8 @@ table 50001 "Rental Sales Line RentCarUa"
             TableRelation = Currency;
 
             trigger OnValidate()
-            var
-                RentalSalesHader: Record "Rental Sales Header RentCarUa";
-                Customer: Record Customer;
-                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
-                "Quantity of Days" := "Ending Date" - "Starting Date";
-                Amount := Quantity * "Unit Price" * ("Quantity of Days");
-                RentalSalesHader.Get(Rec."Document No.");
-                Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."Is VIP Client RentCarUa" = true then
-                    Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error(Label1Err);
-                Modify();
+                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, true);
             end;
         }
         field(10; "Starting Date"; Date)
@@ -215,20 +119,8 @@ table 50001 "Rental Sales Line RentCarUa"
             DataClassification = CustomerContent;
 
             trigger OnValidate()
-            var
-                RentalSalesHader: Record "Rental Sales Header RentCarUa";
-                Customer: Record Customer;
-                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
-                "Quantity of Days" := "Ending Date" - "Starting Date";
-                Amount := Quantity * "Unit Price" * ("Quantity of Days");
-                RentalSalesHader.Get(Rec."Document No.");
-                Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."Is VIP Client RentCarUa" = true then
-                    Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error(Label1Err);
-                Modify();
+                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, true);
             end;
         }
         field(11; "Ending Date"; Date)
@@ -237,20 +129,8 @@ table 50001 "Rental Sales Line RentCarUa"
             DataClassification = CustomerContent;
 
             trigger OnValidate()
-            var
-                RentalSalesHader: Record "Rental Sales Header RentCarUa";
-                Customer: Record Customer;
-                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
-                "Quantity of Days" := "Ending Date" - "Starting Date";
-                Amount := Quantity * "Unit Price" * ("Quantity of Days");
-                RentalSalesHader.Get(Rec."Document No.");
-                Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."Is VIP Client RentCarUa" = true then
-                    Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error(Label1Err);
-                Modify();
+                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, true);
             end;
         }
         field(12; "Quantity of Days"; Integer)
@@ -271,14 +151,15 @@ table 50001 "Rental Sales Line RentCarUa"
             Clustered = true;
         }
     }
+    var
+        RentalSalesHader: Record "Rental Sales Header RentCarUa";
+        RentalCodeUnit1: Codeunit "Rental Codeunit1 RentCarUa";
 }
 
 //TODO: 1) проверка на пустые даты
 //TODO: 2) Quantity of days, starting date and ending date
 //TODO: 3) field Name не в ручную
 //TODO: 4) Discount
-//TODO: 5) CodeUnit
-//TODO: 6) Labels
 
 
 
