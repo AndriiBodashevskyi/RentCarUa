@@ -1,6 +1,6 @@
 table 50000 "Rental Sales Header RentCarUa"
 {
-    Caption = 'Rental Sales Header';
+    Caption = 'Rental Order Header';
     DataClassification = CustomerContent;
     DrillDownPageId = "Sales Order List RentCarUa";
     LookupPageId = "Sales Order List RentCarUa";

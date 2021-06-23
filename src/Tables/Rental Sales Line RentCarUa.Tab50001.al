@@ -1,6 +1,6 @@
 table 50001 "Rental Sales Line RentCarUa"
 {
-    Caption = 'Rental Sales Line';
+    Caption = 'Rental Order Line';
     DataClassification = CustomerContent;
     DrillDownPageID = "Sales Order Subform RentCarUa";
     LookupPageID = "Sales Order Subform RentCarUa";
@@ -264,11 +264,10 @@ table 50001 "Rental Sales Line RentCarUa"
 }
 
 //TODO: 1) проверка на пустые даты
-//TODO: 4) Quantity of days, starting date and ending date
-//TODO: 5) Discount
-//TODO: 7) CodeUnit
-//TODO: 8) Labels
-//TODO: 9) RoleCenter
-//TODO: 10) field Name не в ручную
+//TODO: 2) Quantity of days, starting date and ending date
+//TODO: 3) Discount
+//TODO: 4) CodeUnit
+//TODO: 5) Labels
+//TODO: 7) field Name не в ручную
 
 
