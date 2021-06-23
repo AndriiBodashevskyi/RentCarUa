@@ -62,4 +62,24 @@ pageextension 50007 "Rental Cars RentCarUa" extends "Item List" //31
             }
         }
     }
+    actions
+    {
+        addafter(History)
+        {
+            action("ImportCars RentCarUa")
+            {
+                ApplicationArea = ALl;
+                Caption = 'Import Cars';
+                Promoted = true;
+                PromotedCategory = Process;
+                Image = Import;
+                ToolTip = 'Import Cars';
+
+                trigger OnAction()
+                begin
+                    XmlPort.Run(50000, false, false);
+                end;
+            }
+        }
+    }
 }
