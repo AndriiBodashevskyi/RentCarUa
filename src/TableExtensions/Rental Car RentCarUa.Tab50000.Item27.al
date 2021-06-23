@@ -52,5 +52,10 @@ tableextension 50000 "Rental Car RentCarUa" extends Item //27
             Caption = 'Registration Number';
             DataClassification = CustomerContent;
         }
+        field(50010; "Discount RentCarUa"; Decimal)
+        {
+            Caption = 'Discount';
+            DataClassification = CustomerContent;
+        }
     }
 }

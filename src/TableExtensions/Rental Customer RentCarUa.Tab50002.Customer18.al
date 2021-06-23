@@ -32,5 +32,10 @@ tableextension 50002 "Rental Customer RentCarUa" extends Customer //18
             Caption = 'Driving Experience';
             DataClassification = CustomerContent;
         }
+        field(50006; "Discount RentCarUa"; Decimal)
+        {
+            Caption = 'Discount';
+            DataClassification = CustomerContent;
+        }
     }
 }

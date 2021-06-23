@@ -54,6 +54,11 @@ pageextension 50000 "Rental Cars RentCarUa" extends "Item Card" //30
                 ToolTip = 'Specifies the value of the Registration Number field';
                 ApplicationArea = All;
             }
+            field("Discount RentCarUa"; Rec."Discount RentCarUa")
+            {
+                ToolTip = 'Specifies the value of the Discount field';
+                ApplicationArea = All;
+            }
         }
     }
 }

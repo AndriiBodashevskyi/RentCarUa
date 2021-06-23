@@ -34,6 +34,11 @@ pageextension 50003 "Rental Customer Card RentCarUa" extends "Customer Card" //2
                 ToolTip = 'Specifies the value of the VIP Client field';
                 ApplicationArea = All;
             }
+            field("Discount RentCarUa"; Rec."Discount RentCarUa")
+            {
+                ToolTip = 'Specifies the value of the Discount field';
+                ApplicationArea = All;
+            }
         }
     }
 }
