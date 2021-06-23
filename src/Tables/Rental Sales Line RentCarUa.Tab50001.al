@@ -46,11 +46,15 @@ table 50001 "Rental Sales Line RentCarUa"
             TableRelation = Item;
 
             trigger OnValidate()
+            var
+                Item: Record Item;
             begin
                 RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, false);
+                if Item.Get("Car No.") then
+                    Name := Item.Description;
             end;
         }
-        field(4; Name; Text[50])
+        field(4; Name; Text[100])
         {
             Caption = 'Name';
             DataClassification = CustomerContent;
@@ -76,8 +80,11 @@ table 50001 "Rental Sales Line RentCarUa"
             DataClassification = CustomerContent;
 
             trigger OnValidate()
+            var
+            RentalCodeUnit1: Codeunit "Rental CodeUnit1 RentCarUa";
             begin
                 RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, true);
+                RentalCodeUnit1.Calculate_Discount(); // need to finish because i didn't understand how price list line works 
             end;
         }
         field(7; "Unit of Measure"; Text[50])
@@ -155,11 +162,6 @@ table 50001 "Rental Sales Line RentCarUa"
         RentalSalesHader: Record "Rental Sales Header RentCarUa";
         RentalCodeUnit1: Codeunit "Rental Codeunit1 RentCarUa";
 }
-
-//TODO: 1) проверка на пустые даты
-//TODO: 2) Quantity of days, starting date and ending date
-//TODO: 3) field Name не в ручную
-//TODO: 4) Discount
 
 
 
