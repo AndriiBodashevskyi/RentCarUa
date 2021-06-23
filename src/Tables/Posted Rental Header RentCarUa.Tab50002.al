@@ -8,9 +8,9 @@ table 50002 "Posted Rental Header RentCarUa"
 
     fields
     {
-        field(1; "Doc. No."; Code[20])
+        field(1; "Document No."; Code[20])
         {
-            Caption = 'Doc. No.';
+            Caption = 'Document No.';
             DataClassification = CustomerContent;
         }
         field(2; "Salesperson No."; Code[20])
@@ -44,7 +44,7 @@ table 50002 "Posted Rental Header RentCarUa"
     }
     keys
     {
-        key(PK; "Doc. No.")
+        key(PK; "Document No.")
         {
             Clustered = true;
         }

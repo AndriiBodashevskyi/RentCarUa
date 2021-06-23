@@ -15,7 +15,7 @@ page 50004 "Sales Order List RentCarUa"
             {
                 field("Document No."; Rec."Document No.")
                 {
-                    ToolTip = 'Specifies the value of the Doc. No. field';
+                    ToolTip = 'Specifies the value of the Document No. field';
                     ApplicationArea = All;
                 }
                 field("Customer No."; Rec."Customer No.")

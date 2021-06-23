@@ -263,4 +263,4 @@ table 50001 "Rental Sales Line RentCarUa"
     }
 }
 
-//TODO: 1)проверка или пустые даты
+//TODO: проверка или пустые даты, Line No, errors

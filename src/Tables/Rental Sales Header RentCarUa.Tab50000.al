@@ -9,7 +9,7 @@ table 50000 "Rental Sales Header RentCarUa"
     {
         field(1; "Document No."; Code[20])
         {
-            Caption = 'Doc. No.';
+            Caption = 'Document No.';
             DataClassification = CustomerContent;
         }
         field(2; "Salesperson No."; Code[20])
