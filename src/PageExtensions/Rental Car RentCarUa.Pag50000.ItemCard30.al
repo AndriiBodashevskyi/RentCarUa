@@ -1,6 +1,6 @@
-pageextension 50000 "Rental Cars RentCarUa" extends "Item Card" //30
+pageextension 50000 "Rental Car RentCarUa" extends "Item Card" //30
 {
-    Caption = 'Rental Cars';
+    Caption = 'Rental Car';
     layout
     {
         addlast(Item)
