@@ -17,4 +17,9 @@ codeunit 50000 "Rental Codeunit1 RentCarUa"
         if IsModify = true then
             RentalSalesLine.Modify();
     end;
+
+    procedure Calculate_Discount()
+    begin
+
+    end;
 }
