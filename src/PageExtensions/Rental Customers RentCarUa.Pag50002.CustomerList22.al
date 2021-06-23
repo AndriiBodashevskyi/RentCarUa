@@ -30,7 +30,7 @@ pageextension 50002 "Rental Customers RentCarUa" extends "Customer List" //22
                 ToolTip = 'Specifies the value of the Driving Licence Number field';
                 ApplicationArea = All;
             }
-            field("VIP Client RentCarUa"; Rec."VIP Client RentCarUa")
+            field("Is VIP Client RentCarUa"; Rec."Is VIP Client RentCarUa")
             {
                 ToolTip = 'Specifies the value of the VIP Client field';
                 ApplicationArea = All;

@@ -22,7 +22,7 @@ table 50001 "Rental Sales Line RentCarUa"
             //     Amount := Quantity * "Unit Price" * ("Quantity of Days");
             //     RentalSalesHader.Get(Rec."Document No.");
             //     Customer.Get(RentalSalesHader."Customer No.");
-            //     if Customer."VIP Client RentCarUa" = true then
+            //     if Customer."Is VIP Client RentCarUa" = true then
             //         Amount := Amount - (Amount * 0.15);
             //     if Customer."Driving Exper. Years RentCarUa" < 1 then
             //         error('Sorry! Yours driving experience is less than one year! You could not rent a car');
@@ -43,7 +43,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."VIP Client RentCarUa" = true then
+                if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not rent a car');
@@ -65,7 +65,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."VIP Client RentCarUa" = true then
+                if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not rent a car');
@@ -86,7 +86,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."VIP Client RentCarUa" = true then
+                if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not rent a car');
@@ -107,7 +107,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."VIP Client RentCarUa" = true then
+                if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not rent a car');
@@ -128,7 +128,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."VIP Client RentCarUa" = true then
+                if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not rent a car');
@@ -151,7 +151,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."VIP Client RentCarUa" = true then
+                if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not rent a car');
@@ -172,7 +172,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."VIP Client RentCarUa" = true then
+                if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not rent a car');
@@ -194,7 +194,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."VIP Client RentCarUa" = true then
+                if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not rent a car');
@@ -215,7 +215,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."VIP Client RentCarUa" = true then
+                if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not take a car');
@@ -236,7 +236,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
                 RentalSalesHader.Get(Rec."Document No.");
                 Customer.Get(RentalSalesHader."Customer No.");
-                if Customer."VIP Client RentCarUa" = true then
+                if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not take a car');
@@ -264,7 +264,6 @@ table 50001 "Rental Sales Line RentCarUa"
 }
 
 //TODO: 1) проверка на пустые даты
-//TODO: 2) Line No
 //TODO: 4) Quantity of days, starting date and ending date
 //TODO: 5) Discount
 //TODO: 7) CodeUnit

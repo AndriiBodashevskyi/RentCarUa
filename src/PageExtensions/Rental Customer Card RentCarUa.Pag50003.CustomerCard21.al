@@ -30,7 +30,7 @@ pageextension 50003 "Rental Customer Card RentCarUa" extends "Customer Card" //2
                 ToolTip = 'Specifies the value of the Driving Licence Number field';
                 ApplicationArea = All;
             }
-            field("VIP Client RentCarUa"; Rec."VIP Client RentCarUa")
+            field("Is VIP Client RentCarUa"; Rec."Is VIP Client RentCarUa")
             {
                 ToolTip = 'Specifies the value of the VIP Client field';
                 ApplicationArea = All;
