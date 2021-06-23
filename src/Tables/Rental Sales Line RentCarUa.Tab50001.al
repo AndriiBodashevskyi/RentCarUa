@@ -38,6 +38,7 @@ table 50001 "Rental Sales Line RentCarUa"
             var
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
+                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
                 "Quantity of Days" := "Ending Date" - "Starting Date";
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
@@ -46,7 +47,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You could not rent a car');
+                    error(Label1Err);
                 // Modify();
             end;
         }
@@ -60,6 +61,7 @@ table 50001 "Rental Sales Line RentCarUa"
             var
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
+                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
                 "Quantity of Days" := "Ending Date" - "Starting Date";
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
@@ -68,7 +70,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You could not rent a car');
+                    error(Label1Err);
                 // Modify();
             end;
         }
@@ -81,6 +83,7 @@ table 50001 "Rental Sales Line RentCarUa"
             var
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
+                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
                 "Quantity of Days" := "Ending Date" - "Starting Date";
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
@@ -89,7 +92,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You could not rent a car');
+                    error(Label1Err);
                 Modify();
             end;
         }
@@ -102,6 +105,7 @@ table 50001 "Rental Sales Line RentCarUa"
             var
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
+                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
                 "Quantity of Days" := "Ending Date" - "Starting Date";
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
@@ -110,7 +114,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You could not rent a car');
+                    error(Label1Err);
                 Modify();
             end;
         }
@@ -123,6 +127,7 @@ table 50001 "Rental Sales Line RentCarUa"
             var
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
+                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
                 "Quantity of Days" := "Ending Date" - "Starting Date";
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
@@ -131,7 +136,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You could not rent a car');
+                    error(Label1Err);
                 Modify();
             end;
         }
@@ -146,6 +151,7 @@ table 50001 "Rental Sales Line RentCarUa"
             var
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
+                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
                 "Quantity of Days" := "Ending Date" - "Starting Date";
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
@@ -154,7 +160,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You could not rent a car');
+                    error(Label1Err);
                 Modify();
             end;
         }
@@ -167,6 +173,7 @@ table 50001 "Rental Sales Line RentCarUa"
             var
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
+                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
                 "Quantity of Days" := "Ending Date" - "Starting Date";
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
@@ -175,7 +182,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You could not rent a car');
+                    error(Label1Err);
                 Modify();
             end;
         }
@@ -189,6 +196,7 @@ table 50001 "Rental Sales Line RentCarUa"
             var
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
+                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
                 "Quantity of Days" := "Ending Date" - "Starting Date";
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
@@ -197,7 +205,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You could not rent a car');
+                    error(Label1Err);
                 Modify();
             end;
         }
@@ -210,6 +218,7 @@ table 50001 "Rental Sales Line RentCarUa"
             var
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
+                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
                 "Quantity of Days" := "Ending Date" - "Starting Date";
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
@@ -218,7 +227,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You could not take a car');
+                    error(Label1Err);
                 Modify();
             end;
         }
@@ -231,6 +240,7 @@ table 50001 "Rental Sales Line RentCarUa"
             var
                 RentalSalesHader: Record "Rental Sales Header RentCarUa";
                 Customer: Record Customer;
+                Label1Err : Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';
             begin
                 "Quantity of Days" := "Ending Date" - "Starting Date";
                 Amount := Quantity * "Unit Price" * ("Quantity of Days");
@@ -239,7 +249,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 if Customer."Is VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
                 if Customer."Driving Exper. Years RentCarUa" < 1 then
-                    error('Sorry! Yours driving experience is less than one year! You could not take a car');
+                    error(Label1Err);
                 Modify();
             end;
         }
@@ -265,9 +275,10 @@ table 50001 "Rental Sales Line RentCarUa"
 
 //TODO: 1) проверка на пустые даты
 //TODO: 2) Quantity of days, starting date and ending date
-//TODO: 3) Discount
-//TODO: 4) CodeUnit
-//TODO: 5) Labels
-//TODO: 6) field Name не в ручную
+//TODO: 3) field Name не в ручную
+//TODO: 4) Discount
+//TODO: 5) CodeUnit
+//TODO: 6) Labels
+
 
 
