@@ -24,7 +24,7 @@ table 50001 "Rental Sales Line RentCarUa"
             //     Customer.Get(RentalSalesHader."Customer No.");
             //     if Customer."VIP Client RentCarUa" = true then
             //         Amount := Amount - (Amount * 0.15);
-            //     if Customer."Driving Experience RentCarUa" < 1 then
+            //     if Customer."Driving Exper. Years RentCarUa" < 1 then
             //         error('Sorry! Yours driving experience is less than one year! You could not rent a car');
             //     Modify();
             // end;
@@ -45,7 +45,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Experience RentCarUa" < 1 then
+                if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not rent a car');
                 // Modify();
             end;
@@ -67,7 +67,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Experience RentCarUa" < 1 then
+                if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not rent a car');
                 // Modify();
             end;
@@ -88,7 +88,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Experience RentCarUa" < 1 then
+                if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not rent a car');
                 Modify();
             end;
@@ -109,7 +109,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Experience RentCarUa" < 1 then
+                if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not rent a car');
                 Modify();
             end;
@@ -130,7 +130,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Experience RentCarUa" < 1 then
+                if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not rent a car');
                 Modify();
             end;
@@ -153,7 +153,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Experience RentCarUa" < 1 then
+                if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not rent a car');
                 Modify();
             end;
@@ -174,7 +174,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Experience RentCarUa" < 1 then
+                if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not rent a car');
                 Modify();
             end;
@@ -196,7 +196,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Experience RentCarUa" < 1 then
+                if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not rent a car');
                 Modify();
             end;
@@ -217,7 +217,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Experience RentCarUa" < 1 then
+                if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not take a car');
                 Modify();
             end;
@@ -238,7 +238,7 @@ table 50001 "Rental Sales Line RentCarUa"
                 Customer.Get(RentalSalesHader."Customer No.");
                 if Customer."VIP Client RentCarUa" = true then
                     Amount := Amount - (Amount * 0.15);
-                if Customer."Driving Experience RentCarUa" < 1 then
+                if Customer."Driving Exper. Years RentCarUa" < 1 then
                     error('Sorry! Yours driving experience is less than one year! You could not take a car');
                 Modify();
             end;
@@ -265,9 +265,11 @@ table 50001 "Rental Sales Line RentCarUa"
 
 //TODO: 1) проверка на пустые даты
 //TODO: 2) Line No
-//TODO: 3) Modify
-//TODO: 4) Quantity of days
+//TODO: 4) Quantity of days, starting date and ending date
 //TODO: 5) Discount
-//TODO: 6) Errors
 //TODO: 7) CodeUnit
 //TODO: 8) Labels
+//TODO: 9) RoleCenter
+//TODO: 10) field Name не в ручную
+
+

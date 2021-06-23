@@ -20,7 +20,7 @@ pageextension 50002 "Rental Customers RentCarUa" extends "Customer List" //22
                 ToolTip = 'Specifies the value of the Credit Card Number field';
                 ApplicationArea = All;
             }
-            field("Driving Experience RentCarUa"; Rec."Driving Experience RentCarUa")
+            field("Driving Exper. Years RentCarUa"; Rec."Driving Exper. Years RentCarUa")
             {
                 ToolTip = 'Specifies the value of the Driving Experience field';
                 ApplicationArea = All;
