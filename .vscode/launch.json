@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Microsoft cloud sandbox",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "RentCarUa",
+            "startupObjectId": 50004,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "tenant": "cbfd99af-e3d8-4eef-94ab-b1bbc5515fa9",
+            "schemaUpdateMode": "ForceSync"
+        }
+    ]
+}

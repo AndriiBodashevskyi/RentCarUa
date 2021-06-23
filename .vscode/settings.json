@@ -1,0 +1,19 @@
+{
+    "al.enableCodeActions": true,
+    "al.enableCodeAnalysis": true,
+    "al.codeAnalyzers": [
+        "${CodeCop}",
+        "${PerTenantExtensionCop}", //not for ISV
+        // "${AppSourceCop}",
+        "${UICop}"
+    ],
+    // "CRS.ObjectNamePrefix": "RentCarUa ",
+    "CRS.ObjectNameSuffix": " RentCarUa",
+    "CRS.FileNamePattern": "<ObjectName>.<ObjectTypeShort><ObjectId>.al",
+    "CRS.FileNamePatternExtensions": "<ObjectName>.<ObjectTypeShort><ObjectId>.<BaseNameShort><BaseId>.al",
+    "CRS.OnSaveAlFileAction": "Rename",
+    "git.enableSmartCommit": true,
+    "al.ruleSetPath": "./ruleset.json",
+    "editor.maxTokenizationLineLength": 50000,
+    "gitignore.cacheExpirationInterval": 3600        
+}
