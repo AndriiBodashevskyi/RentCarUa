@@ -236,7 +236,7 @@ table 50001 "Rental Sales Line RentCarUa"
         {
             Caption = 'Quantity of Days';
             DataClassification = CustomerContent;
-            
+
         }
     }
     keys
@@ -247,3 +247,5 @@ table 50001 "Rental Sales Line RentCarUa"
         }
     }
 }
+
+//TODO: 2)проверка или пустые даты; 3)добавить формулу для колличества дней; 4)линия не должна пропадать(модифай?)

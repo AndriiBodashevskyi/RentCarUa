@@ -32,6 +32,8 @@ page 50001 "Sales Order Subform RentCarUa"
                     Caption = 'Line No';
                     ToolTip = 'Specifies the value of the Line No. field';
                     ApplicationArea = All;
+                    Editable = false;
+                    Visible = false;
                 }
                 field(Name; Rec.Name)
                 {
