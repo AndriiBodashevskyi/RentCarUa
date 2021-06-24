@@ -1,9 +1,9 @@
-table 50001 "Rental Sales Line RentCarUa"
+table 50001 "Rental Order Line RentCarUa"
 {
     Caption = 'Rental Order Line';
     DataClassification = CustomerContent;
-    DrillDownPageID = "Sales Order Subform RentCarUa";
-    LookupPageID = "Sales Order Subform RentCarUa";
+    DrillDownPageID = "Rental Order Subform RentCarUa";
+    LookupPageID = "Rental Order Subform RentCarUa";
 
     fields
     {
@@ -11,7 +11,7 @@ table 50001 "Rental Sales Line RentCarUa"
         {
             Caption = 'Document No.';
             DataClassification = CustomerContent;
-            TableRelation = "Rental Sales Header RentCarUa"."Document No.";
+            TableRelation = "Rental Order Header RentCarUa"."Document No.";
 
             // trigger OnValidate()
             // var
@@ -36,7 +36,7 @@ table 50001 "Rental Sales Line RentCarUa"
 
             trigger OnValidate()
             begin
-                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, false);
+                RentalCalcAmount.Rental_Calc_Amount_RentCarUa(RentalSalesHader, rec, false);
             end;
         }
         field(3; "Car No."; Code[20])
@@ -49,7 +49,7 @@ table 50001 "Rental Sales Line RentCarUa"
             var
                 Item: Record Item;
             begin
-                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, false);
+                RentalCalcAmount.Rental_Calc_Amount_RentCarUa(RentalSalesHader, rec, false);
                 if Item.Get("Car No.") then
                     Name := Item.Description;
             end;
@@ -61,7 +61,7 @@ table 50001 "Rental Sales Line RentCarUa"
 
             trigger OnValidate()
             begin
-                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, true);
+                RentalCalcAmount.Rental_Calc_Amount_RentCarUa(RentalSalesHader, rec, true);
             end;
         }
         field(5; Quantity; Integer)
@@ -71,7 +71,7 @@ table 50001 "Rental Sales Line RentCarUa"
 
             trigger OnValidate()
             begin
-                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, true);
+                RentalCalcAmount.Rental_Calc_Amount_RentCarUa(RentalSalesHader, rec, true);
             end;
         }
         field(6; "Unit Price"; Decimal)
@@ -81,10 +81,10 @@ table 50001 "Rental Sales Line RentCarUa"
 
             trigger OnValidate()
             var
-            RentalCodeUnit1: Codeunit "Rental CodeUnit1 RentCarUa";
+            RentalCalcAmount: Codeunit "Rental Calc. Amount RentCarUa";
             begin
-                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, true);
-                RentalCodeUnit1.Calculate_Discount(); // need to finish because i didn't understand how price list line works 
+                RentalCalcAmount.Rental_Calc_Amount_RentCarUa(RentalSalesHader, rec, true);
+                RentalCalcAmount.Calculate_Discount(); // need to finish because i didn't understand how price list line works 
             end;
         }
         field(7; "Unit of Measure"; Text[50])
@@ -96,7 +96,7 @@ table 50001 "Rental Sales Line RentCarUa"
 
             trigger OnValidate()
             begin
-                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, true);
+                RentalCalcAmount.Rental_Calc_Amount_RentCarUa(RentalSalesHader, rec, true);
             end;
         }
         field(8; Amount; Decimal)
@@ -106,7 +106,7 @@ table 50001 "Rental Sales Line RentCarUa"
 
             trigger OnValidate()
             begin
-                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, true);
+                RentalCalcAmount.Rental_Calc_Amount_RentCarUa(RentalSalesHader, rec, true);
             end;
         }
         field(9; "Currency Code"; Code[10])
@@ -117,7 +117,7 @@ table 50001 "Rental Sales Line RentCarUa"
 
             trigger OnValidate()
             begin
-                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, true);
+                RentalCalcAmount.Rental_Calc_Amount_RentCarUa(RentalSalesHader, rec, true);
             end;
         }
         field(10; "Starting Date"; Date)
@@ -127,7 +127,7 @@ table 50001 "Rental Sales Line RentCarUa"
 
             trigger OnValidate()
             begin
-                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, true);
+                RentalCalcAmount.Rental_Calc_Amount_RentCarUa(RentalSalesHader, rec, true);
             end;
         }
         field(11; "Ending Date"; Date)
@@ -137,7 +137,7 @@ table 50001 "Rental Sales Line RentCarUa"
 
             trigger OnValidate()
             begin
-                RentalCodeUnit1.Rental_Procedure1_RentCarUa(RentalSalesHader, rec, true);
+                RentalCalcAmount.Rental_Calc_Amount_RentCarUa(RentalSalesHader, rec, true);
             end;
         }
         field(12; "Quantity of Days"; Integer)
@@ -159,8 +159,8 @@ table 50001 "Rental Sales Line RentCarUa"
         }
     }
     var
-        RentalSalesHader: Record "Rental Sales Header RentCarUa";
-        RentalCodeUnit1: Codeunit "Rental Codeunit1 RentCarUa";
+        RentalSalesHader: Record "Rental Order Header RentCarUa";
+        RentalCalcAmount: Codeunit "Rental Calc. Amount RentCarUa";
 }
 
 

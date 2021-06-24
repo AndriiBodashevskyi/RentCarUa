@@ -1,4 +1,4 @@
-page 50001 "Sales Order Subform RentCarUa"
+page 50001 "Rental Order Subform RentCarUa"
 {
     // AutoSplitKey = true;
     Caption = 'Rental Order Lines';
@@ -6,7 +6,7 @@ page 50001 "Sales Order Subform RentCarUa"
     // LinksAllowed = false;
     MultipleNewLines = true;
     PageType = ListPart;
-    SourceTable = "Rental Sales Line RentCarUa";
+    SourceTable = "Rental Order Line RentCarUa";
     
     layout
     {

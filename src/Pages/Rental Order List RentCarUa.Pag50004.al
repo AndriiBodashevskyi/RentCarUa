@@ -1,10 +1,10 @@
-page 50004 "Sales Order List RentCarUa"
+page 50004 "Rental Order List RentCarUa"
 {
     ApplicationArea = All;
     Caption = 'Rental Orders';
-    CardPageId = "Sales Order RentCarUa";
+    CardPageId = "Rental Order RentCarUa";
     PageType = List;
-    SourceTable = "Rental Sales Header RentCarUa";
+    SourceTable = "Rental Order Header RentCarUa";
     UsageCategory = Lists;
 
     layout

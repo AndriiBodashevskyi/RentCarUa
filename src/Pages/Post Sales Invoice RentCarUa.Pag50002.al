@@ -46,7 +46,7 @@ page 50002 "Post Sales Invoice RentCarUa"
                     ApplicationArea = All;
                 }
             }
-            part(SalesLines; "Sales Order Subform RentCarUa")
+            part(SalesLines; "Rental Order Subform RentCarUa")
             {
                 ApplicationArea = All;
                 SubPageLink = "Document No." = FIELD("Document No.");

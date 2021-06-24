@@ -1,6 +1,6 @@
-codeunit 50000 "Rental Codeunit1 RentCarUa"
+codeunit 50000 "Rental Calc. Amount RentCarUa"
 {
-    procedure Rental_Procedure1_RentCarUa(RentalSalesHeader: Record "Rental Sales Header RentCarUa"; var RentalSalesLine: Record "Rental Sales Line RentCarUa"; IsModify: Boolean)
+    procedure Rental_Calc_Amount_RentCarUa(RentalSalesHeader: Record "Rental Order Header RentCarUa"; var RentalSalesLine: Record "Rental Order Line RentCarUa"; IsModify: Boolean)
     var
         Customer: Record Customer;
         Label1Err: Label 'Sorry! Yours driving experience is less than one year! You could not rent a car';

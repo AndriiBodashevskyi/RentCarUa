@@ -1,8 +1,8 @@
-page 50000 "Sales Order RentCarUa"
+page 50000 "Rental Order RentCarUa"
 {
     Caption = 'Rental Order';
     PageType = Document;
-    SourceTable = "Rental Sales Header RentCarUa";
+    SourceTable = "Rental Order Header RentCarUa";
     UsageCategory = Documents;
     ApplicationArea = All;
 
@@ -52,12 +52,34 @@ page 50000 "Sales Order RentCarUa"
                     ApplicationArea = All;
                 }
             }
-            part(SalesLines; "Sales Order Subform RentCarUa")
+            part(SalesLines; "Rental Order Subform RentCarUa")
             {
                 ApplicationArea = All;
                 SubPageLink = "Document No." = FIELD("Document No.");
                 UpdatePropagation = Both;
             }
         }
-    }   
+    }
+    actions
+    {
+        area(Processing)
+        {
+            action("Rental Post")
+            {
+                ApplicationArea = All;
+                Caption = 'Rental Post';
+                Image = Post;
+                ToolTip = 'Rental Post';
+
+                trigger OnAction()
+                var
+                    RentalPostOrder: Codeunit "Rental Post Order RentCarUa";
+                begin
+                    CurrPage.Update(true);
+                    Commit();
+                    RentalPostOrder.Run(Rec);
+                end;
+            }
+        }
+    }  
 }

@@ -1,9 +1,9 @@
-table 50000 "Rental Sales Header RentCarUa"
+table 50000 "Rental Order Header RentCarUa"
 {
     Caption = 'Rental Order Header';
     DataClassification = CustomerContent;
-    DrillDownPageId = "Sales Order List RentCarUa";
-    LookupPageId = "Sales Order List RentCarUa";
+    DrillDownPageId = "Rental Order List RentCarUa";
+    LookupPageId = "Rental Order List RentCarUa";
 
     fields
     {
@@ -54,7 +54,7 @@ table 50000 "Rental Sales Header RentCarUa"
             Caption = 'No. Series';
             Editable = false;
             TableRelation = "No. Series";
-        }
+        }        
     }
     keys
     {

@@ -41,6 +41,12 @@ table 50002 "Posted Rental Header RentCarUa"
             DataClassification = CustomerContent;
             TableRelation = Location;
         }
+        field(7; "No. Series"; Code[20])
+        {
+            Caption = 'No. Series';
+            Editable = false;
+            TableRelation = "No. Series";
+        }
     }
     keys
     {
@@ -49,4 +55,49 @@ table 50002 "Posted Rental Header RentCarUa"
             Clustered = true;
         }
     }
+
+    trigger OnInsert()
+    begin
+        InitInsert();
+        // if "Document No." = '' then begin
+        //     SalesSetup.Get();
+        //     SalesSetup.TestField("Order No. RentCarUa");
+        //     NoSeriesMgt.InitSeries(SalesSetup."Order No. RentCarUa", xRec."No. Series", 0D, "Document No.", "No. Series");
+        // end;
+    end;
+
+    procedure InitInsert()
+    begin
+        if "Document No." = '' then begin
+            TestNoSeries;
+            NoSeriesMgt.InitSeries(GetNoSeriesCode, xRec."No. Series", "Posting Date", "Document No.", "No. Series");
+        end;
+    end;
+
+    local procedure TestNoSeries()
+    begin
+        GetRentalSetup;
+        RentalSetup.TestField("Posted Order Nos.");
+    end;
+
+    local procedure GetRentalSetup()
+    begin
+        if RentalSetup.Get() then
+            exit;
+        RentalSetup.Insert(true);
+        Commit();
+    end;
+
+    procedure GetNoSeriesCode(): Code[20]
+    var
+        NoSeriesCode: Code[20];
+    begin
+        exit(NoSeriesMgt.GetNoSeriesWithCheck(RentalSetup."Posted Order Nos.", false, "No. Series"));
+    end;
+
+
+    var
+        RentalSetup: Record "Rental Setup RentCarUa";
+        // SalesSetup: Record "Sales & Receivables Setup";
+        NoSeriesMgt: Codeunit NoSeriesManagement;
 }

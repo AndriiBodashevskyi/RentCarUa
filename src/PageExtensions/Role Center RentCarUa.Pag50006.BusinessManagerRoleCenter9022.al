@@ -18,7 +18,7 @@ pageextension 50006 "Role Center RentCarUa" extends "Business Manager Role Cente
                 {
                     ApplicationArea = Basic, Suite;
                     Caption = 'Rental Orders';
-                    RunObject = page "Sales Order List RentCarUa";
+                    RunObject = page "Rental Order List RentCarUa";
                 }
                 action("Rental Customers RentCarUa")
                 {
@@ -34,7 +34,7 @@ pageextension 50006 "Role Center RentCarUa" extends "Business Manager Role Cente
             {
                 ApplicationArea = Basic, Suite;
                 Caption = 'Rental Order';
-                RunObject = page "Sales Order RentCarUa";
+                RunObject = page "Rental Order RentCarUa";
                 RunPageMode = Create;
                 ToolTip = 'Create a new rental order';
             }
