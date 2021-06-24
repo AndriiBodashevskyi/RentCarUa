@@ -29,19 +29,16 @@ codeunit 50001 "Rental Post Order RentCarUa"
     var
         RentalOrderLine: Record "Rental Order Line RentCarUa";
         PostedRentalLine: Record "Posted Rental Line RentCarUa";
-        TempRentalOrderLine: Record "Rental Order Line RentCarUa" temporary;
     begin
         RentalOrderLine.SetRange("Order No.", RentalSalesHeader."Order No.");
-        if not RentalOrderLine.FindSet(false, false) then
-            exit;
-
-        repeat
-            PostedRentalLine."Order No." := PostDocumentNo;
-            PostedRentalLine."Line No." := RentalOrderLine."Line No.";
-            PostedRentalLine.Insert(true);
-            PostedRentalLine.TransferFields(RentalOrderLine);
-            PostedRentalLine."Order No." := PostDocumentNo;
-            PostedRentalLine.Modify(true);
-        until RentalOrderLine.Next() = 0;
+        if RentalOrderLine.FindSet(false, false) then
+            repeat
+                PostedRentalLine."Order No." := PostDocumentNo;
+                PostedRentalLine."Line No." := RentalOrderLine."Line No.";
+                PostedRentalLine.Insert(true);
+                PostedRentalLine.TransferFields(RentalOrderLine);
+                PostedRentalLine."Order No." := PostDocumentNo;
+                PostedRentalLine.Modify(true);
+            until RentalOrderLine.Next() = 0;
     end;
 }
