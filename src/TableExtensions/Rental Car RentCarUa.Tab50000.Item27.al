@@ -59,5 +59,15 @@ tableextension 50000 "Rental Car RentCarUa" extends Item //27
             Caption = 'Discount';
             DataClassification = CustomerContent;
         }
+        field(50011; "Is Available Now RentCarUa"; Boolean)
+        {
+            Caption = 'Is Available Now';
+            DataClassification = CustomerContent;
+        }
+        field(50012; "Photo RentCarUa"; Blob)
+        {
+            Caption = 'Photo';
+            DataClassification = CustomerContent;
+        }
     }
 }
