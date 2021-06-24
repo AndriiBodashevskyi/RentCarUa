@@ -7,7 +7,16 @@ page 50000 "Sales Order RentCarUa"
     ApplicationArea = All;
 
     layout
-    {
+    {   
+        area(FactBoxes)
+        {
+            part("Car Details FactBox RentCarUa"; "Car Details FactBox RentCarUa")
+            {
+                Caption = 'Car Details FactBox';
+                ApplicationArea = All;
+                Provider = SalesLines;
+            }
+        }
         area(content)
         {
             group(General)
