@@ -8,7 +8,8 @@ page 50003 "Post Sales Inv Lines RentCarUa"
     PageType = ListPart;
     SourceTable = "Posted Rental Line RentCarUa";
     Editable = false;
-    
+    DeleteAllowed = false;
+    InsertAllowed = false;
     layout
     {
         area(content)

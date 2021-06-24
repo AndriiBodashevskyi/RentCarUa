@@ -6,6 +6,8 @@ page 50002 "Post Sales Invoice RentCarUa"
     UsageCategory = Documents;
     ApplicationArea = All;
     Editable = false;
+    DeleteAllowed = false;
+    InsertAllowed = false;
 
     layout
     {

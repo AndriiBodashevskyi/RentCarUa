@@ -7,6 +7,8 @@ page 50005 "Post Sales Inv List RentCarUa"
     Editable = false;
     SourceTable = "Posted Rental Header RentCarUa";
     UsageCategory = Lists;
+    DeleteAllowed = false;
+    InsertAllowed = false;
 
     layout
     {

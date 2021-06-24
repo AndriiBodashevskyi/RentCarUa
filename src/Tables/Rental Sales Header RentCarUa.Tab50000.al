@@ -15,8 +15,8 @@ table 50000 "Rental Sales Header RentCarUa"
             trigger OnValidate()
             begin
                 if "Document No." <> xRec."Document No." then begin
-                    SalesSetup.Get();
-                    NoSeriesMgt.TestManual(SalesSetup."Order No. RentCarUa");
+                    GetRentalSetup();
+                    NoSeriesMgt.TestManual(GetNoSeriesCode());
                     "No. Series" := '';
                 end;
             end;
@@ -64,16 +64,47 @@ table 50000 "Rental Sales Header RentCarUa"
         }
     }
     trigger OnInsert()
-    var
+    begin
+        InitInsert();
+        // if "Document No." = '' then begin
+        //     SalesSetup.Get();
+        //     SalesSetup.TestField("Order No. RentCarUa");
+        //     NoSeriesMgt.InitSeries(SalesSetup."Order No. RentCarUa", xRec."No. Series", 0D, "Document No.", "No. Series");
+        // end;
+    end;
+
+    procedure InitInsert()
     begin
         if "Document No." = '' then begin
-            SalesSetup.Get();
-            SalesSetup.TestField("Order No. RentCarUa");
-            NoSeriesMgt.InitSeries(SalesSetup."Order No. RentCarUa", xRec."No. Series", 0D, "Document No.", "No. Series");
+            TestNoSeries;
+            NoSeriesMgt.InitSeries(GetNoSeriesCode, xRec."No. Series", 0D, "Document No.", "No. Series");
         end;
     end;
 
+    local procedure TestNoSeries()
+    begin
+        GetRentalSetup;
+        RentalSetup.TestField("Order Nos.");
+    end;
+
+    local procedure GetRentalSetup()
+    begin
+        if RentalSetup.Get() then
+            exit;
+        RentalSetup.Insert(true);
+        Commit();
+    end;
+
+    procedure GetNoSeriesCode(): Code[20]
     var
-        SalesSetup: Record "Sales & Receivables Setup";
+        NoSeriesCode: Code[20];
+    begin
+        exit(NoSeriesMgt.GetNoSeriesWithCheck(RentalSetup."Order Nos.", false, "No. Series"));
+    end;
+
+
+    var
+        RentalSetup: Record "Rental Setup RentCarUa";
+        // SalesSetup: Record "Sales & Receivables Setup";
         NoSeriesMgt: Codeunit NoSeriesManagement;
 }
