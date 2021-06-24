@@ -11,6 +11,15 @@ table 50000 "Rental Sales Header RentCarUa"
         {
             Caption = 'Document No.';
             DataClassification = CustomerContent;
+
+            trigger OnValidate()
+            begin
+                if "Document No." <> xRec."Document No." then begin
+                    SalesSetup.Get();
+                    NoSeriesMgt.TestManual(SalesSetup."Order No. RentCarUa");
+                    "No. Series" := '';
+                end;
+            end;
         }
         field(2; "Salesperson No."; Code[20])
         {
@@ -40,6 +49,12 @@ table 50000 "Rental Sales Header RentCarUa"
             DataClassification = CustomerContent;
             TableRelation = Location;
         }
+        field(7; "No. Series"; Code[20])
+        {
+            Caption = 'No. Series';
+            Editable = false;
+            TableRelation = "No. Series";
+        }
     }
     keys
     {
@@ -48,4 +63,17 @@ table 50000 "Rental Sales Header RentCarUa"
             Clustered = true;
         }
     }
+    trigger OnInsert()
+    var
+    begin
+        if "Document No." = '' then begin
+            SalesSetup.Get();
+            SalesSetup.TestField("Order No. RentCarUa");
+            NoSeriesMgt.InitSeries(SalesSetup."Order No. RentCarUa", xRec."No. Series", 0D, "Document No.", "No. Series");
+        end;
+    end;
+
+    var
+        SalesSetup: Record "Sales & Receivables Setup";
+        NoSeriesMgt: Codeunit NoSeriesManagement;
 }
