@@ -7,11 +7,11 @@ table 50001 "Rental Order Line RentCarUa"
 
     fields
     {
-        field(1; "Document No."; Code[20])
+        field(1; "Order No."; Code[20])
         {
-            Caption = 'Document No.';
+            Caption = 'Order No.';
             DataClassification = CustomerContent;
-            TableRelation = "Rental Order Header RentCarUa"."Document No.";
+            TableRelation = "Rental Order Header RentCarUa"."Order No.";
 
             // trigger OnValidate()
             // var
@@ -20,7 +20,7 @@ table 50001 "Rental Order Line RentCarUa"
             // begin
             //     "Quantity of Days" := "Ending Date" - "Starting Date";
             //     Amount := Quantity * "Unit Price" * ("Quantity of Days");
-            //     RentalSalesHader.Get(Rec."Document No.");
+            //     RentalSalesHader.Get(Rec."Order No.");
             //     Customer.Get(RentalSalesHader."Customer No.");
             //     if Customer."Is VIP Client RentCarUa" = true then
             //         Amount := Amount - (Amount * 0.15);
@@ -153,7 +153,7 @@ table 50001 "Rental Order Line RentCarUa"
     }
     keys
     {
-        key(PK; "Document No.", "Line No.")
+        key(PK; "Order No.", "Line No.")
         {
             Clustered = true;
         }

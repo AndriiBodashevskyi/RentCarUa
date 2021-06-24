@@ -8,11 +8,11 @@ table 50003 "Posted Rental Line RentCarUa"
     
     fields
     {
-        field(1; "Document No."; Code[20])
+        field(1; "Order No."; Code[20])
         {
-            Caption = 'Document No.';
+            Caption = 'Order No.';
             DataClassification = CustomerContent;
-            TableRelation = "Rental Order Header RentCarUa"."Document No.";
+            TableRelation = "Rental Order Header RentCarUa"."Order No.";
         }
         field(2; "Line No."; Integer)
         {
@@ -71,7 +71,7 @@ table 50003 "Posted Rental Line RentCarUa"
     }
     keys
     {
-        key(PK; "Document No.", "Line No.")
+        key(PK; "Order No.", "Line No.")
         {
             Clustered = true;
         }

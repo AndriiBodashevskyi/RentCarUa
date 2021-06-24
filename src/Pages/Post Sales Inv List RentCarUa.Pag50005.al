@@ -16,9 +16,9 @@ page 50005 "Post Sales Inv List RentCarUa"
         {
             repeater(Control1)
             {
-                field("Document No."; Rec."Document No.")
+                field("Order No."; Rec."Order No.")
                 {
-                    ToolTip = 'Specifies the value of the Document No. field';
+                    ToolTip = 'Specifies the value of the Order No. field';
                     ApplicationArea = All;
                 }
                 field("Customer No."; Rec."Customer No.")

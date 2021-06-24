@@ -11,9 +11,9 @@ codeunit 50001 "Rental Post Order RentCarUa"
     var
         PostedRentalHeader: Record "Posted Rental Header RentCarUa";
     begin
-        PostedRentalHeader."Document No." := '';
+        PostedRentalHeader."Order No." := '';
         PostedRentalHeader.Insert(true);
-        CopyRentalOrderLineToPostedROLine(RentalSalesHeader, PostedRentalHeader."Document No.");
+        CopyRentalOrderLineToPostedROLine(RentalSalesHeader, PostedRentalHeader."Order No.");
     end;
 
     local procedure CopyRentalOrderLineToPostedROLine(var RentalSalesHeader: Record "Rental Order Header RentCarUa"; PostDocumentNo: Code[20])
@@ -22,15 +22,16 @@ codeunit 50001 "Rental Post Order RentCarUa"
         PostedRentalLine: Record "Posted Rental Line RentCarUa";
         TempRentalOrderLine: Record "Rental Order Line RentCarUa" temporary;
     begin
-        RentalOrderLine.SetRange("Document No.", RentalSalesHeader."Document No.");
+        RentalOrderLine.SetRange("Order No.", RentalSalesHeader."Order No.");
         if not RentalOrderLine.FindSet(false, false) then 
             exit;
 
             repeat
-                PostedRentalLine."Document No." := PostDocumentNo;
+                PostedRentalLine."Order No." := PostDocumentNo;
                 PostedRentalLine."Line No." := RentalOrderLine."Line No.";
                 PostedRentalLine.Insert(true);
                 PostedRentalLine.TransferFields(RentalOrderLine);
+                PostedRentalLine."Order No." := PostDocumentNo;
                 PostedRentalLine.Modify(true);
             until RentalOrderLine.Next() = 0;
     end;

@@ -8,9 +8,9 @@ table 50002 "Posted Rental Header RentCarUa"
 
     fields
     {
-        field(1; "Document No."; Code[20])
+        field(1; "Order No."; Code[20])
         {
-            Caption = 'Document No.';
+            Caption = 'Order No.';
             DataClassification = CustomerContent;
         }
         field(2; "Salesperson No."; Code[20])
@@ -50,7 +50,7 @@ table 50002 "Posted Rental Header RentCarUa"
     }
     keys
     {
-        key(PK; "Document No.")
+        key(PK; "Order No.")
         {
             Clustered = true;
         }
@@ -59,18 +59,18 @@ table 50002 "Posted Rental Header RentCarUa"
     trigger OnInsert()
     begin
         InitInsert();
-        // if "Document No." = '' then begin
+        // if "Order No." = '' then begin
         //     SalesSetup.Get();
         //     SalesSetup.TestField("Order No. RentCarUa");
-        //     NoSeriesMgt.InitSeries(SalesSetup."Order No. RentCarUa", xRec."No. Series", 0D, "Document No.", "No. Series");
+        //     NoSeriesMgt.InitSeries(SalesSetup."Order No. RentCarUa", xRec."No. Series", 0D, "Order No.", "No. Series");
         // end;
     end;
 
     procedure InitInsert()
     begin
-        if "Document No." = '' then begin
+        if "Order No." = '' then begin
             TestNoSeries;
-            NoSeriesMgt.InitSeries(GetNoSeriesCode, xRec."No. Series", "Posting Date", "Document No.", "No. Series");
+            NoSeriesMgt.InitSeries(GetNoSeriesCode, xRec."No. Series", "Posting Date", "Order No.", "No. Series");
         end;
     end;
 

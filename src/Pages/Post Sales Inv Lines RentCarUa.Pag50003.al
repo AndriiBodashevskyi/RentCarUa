@@ -22,10 +22,10 @@ page 50003 "Post Sales Inv Lines RentCarUa"
                     ToolTip = 'Specifies the value of the Car No. field';
                     ApplicationArea = All;
                 }
-                field("Document No."; Rec."Document No.")
+                field("Order No."; Rec."Order No.")
                 {
-                    Caption = 'Document No.';
-                    ToolTip = 'Specifies the value of the Document No. field';
+                    Caption = 'Order No.';
+                    ToolTip = 'Specifies the value of the Order No. field';
                     ApplicationArea = All;
                 }
                 field("Line No."; Rec."Line No.")

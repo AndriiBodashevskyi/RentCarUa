@@ -20,10 +20,10 @@ page 50001 "Rental Order Subform RentCarUa"
                     ToolTip = 'Specifies the value of the Car No. field';
                     ApplicationArea = All;
                 }
-                field("Document No."; Rec."Document No.")
+                field("Order No."; Rec."Order No.")
                 {
-                    Caption = 'Document No.';
-                    ToolTip = 'Specifies the value of the Document No. field';
+                    Caption = 'Order No.';
+                    ToolTip = 'Specifies the value of the Order No. field';
                     ApplicationArea = All;
                     Visible = false;
                 }

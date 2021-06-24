@@ -15,10 +15,10 @@ page 50002 "Post Sales Invoice RentCarUa"
         {
             group(General)
             {
-                field("Document No."; Rec."Document No.")
+                field("Order No."; Rec."Order No.")
                 {
-                    Caption = 'Document No.';
-                    ToolTip = 'Specifies the value of the Document No. field';
+                    Caption = 'Order No.';
+                    ToolTip = 'Specifies the value of the Order No. field';
                     ApplicationArea = All;
                 }
                 field("Customer No."; Rec."Customer No.")
@@ -49,7 +49,7 @@ page 50002 "Post Sales Invoice RentCarUa"
             part(SalesLines; "Rental Order Subform RentCarUa")
             {
                 ApplicationArea = All;
-                SubPageLink = "Document No." = FIELD("Document No.");
+                SubPageLink = "Order No." = FIELD("Order No.");
                 UpdatePropagation = Both;
             }
         }
