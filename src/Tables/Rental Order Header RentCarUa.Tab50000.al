@@ -102,6 +102,13 @@ table 50000 "Rental Order Header RentCarUa"
         exit(NoSeriesMgt.GetNoSeriesWithCheck(RentalSetup."Order Nos.", false, "No. Series"));
     end;
 
+    trigger OnDelete()
+    var
+        RentalOrderLine: Record "Rental Order Line RentCarUa";
+    begin
+        RentalOrderLine.SetRange("Order No.", Rec."Order No.");
+        RentalOrderLine.DeleteAll(true);
+    end;
 
     var
         RentalSetup: Record "Rental Setup RentCarUa";
