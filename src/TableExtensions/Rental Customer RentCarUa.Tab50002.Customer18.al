@@ -37,6 +37,12 @@ tableextension 50002 "Rental Customer RentCarUa" extends Customer //18
         {
             Caption = 'Discount';
             DataClassification = CustomerContent;
+            TableRelation = "Price List Line"."Value RentCarUa" where("Code RentCarUa" = field("No."));
+        }
+        field(50007; "Orders Quantity RentCarUa"; Integer)
+        {
+            Caption = 'Orders Quantity';
+            DataClassification = CustomerContent;
         }
     }
 }

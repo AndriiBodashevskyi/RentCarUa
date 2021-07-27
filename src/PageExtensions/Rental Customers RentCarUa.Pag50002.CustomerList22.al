@@ -5,6 +5,16 @@ pageextension 50002 "Rental Customers RentCarUa" extends "Customer List" //22
     {
         addlast(Control1)
         {
+            field("Amount RentCarUa"; Rec.Amount)
+            {
+                ToolTip = 'Specifies the value of the Amount field';
+                ApplicationArea = All;
+            }
+            field("Orders Quantity RentCarUa"; Rec."Orders Quantity RentCarUa")
+            {
+                ToolTip = 'Specifies the value of the Orders Quantity field';
+                ApplicationArea = All;
+            }
             field("Additional Details RentCarUa"; Rec."Additional Details RentCarUa")
             {
                 ToolTip = 'Specifies the value of the Additional Details field';

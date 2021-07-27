@@ -1,7 +1,7 @@
 tableextension 50000 "Rental Car RentCarUa" extends Item //27
 {
     Caption = 'Rental Car';
-    
+
     fields
     {
         field(50000; "Body Style RentCarUa"; Enum "Body Style RentCarUa")
@@ -58,13 +58,14 @@ tableextension 50000 "Rental Car RentCarUa" extends Item //27
         {
             Caption = 'Discount';
             DataClassification = CustomerContent;
+            TableRelation = "Price List Line"."Value RentCarUa" where("Code RentCarUa" = field("No."));
         }
         field(50011; "Is Available Now RentCarUa"; Boolean)
         {
             Caption = 'Is Available Now';
             DataClassification = CustomerContent;
         }
-        field(50012; "Photo RentCarUa"; Blob)
+        field(50012; "Photo RentCarUa"; Media)
         {
             Caption = 'Photo';
             DataClassification = CustomerContent;
